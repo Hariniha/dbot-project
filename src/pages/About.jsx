@@ -1,9 +1,13 @@
 import React from 'react'
-import Mission from "../components/Mission"
+import AboutHe from '../components/AboutHe'
+import Vision from '../components/Vision'
 
 const About = () => {
   return (
-    <div><Mission/></div>
+    <div>
+      {/* <div><AboutHe/></div>
+      <div><Vision/></div> */}
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 // src/components/OurClients.jsx
 import React from 'react';
-import { images } from '../assets/assets.js';  // Importing images from assets.js
+
 
 const OurClients = () => {
   return (
@@ -10,14 +10,17 @@ const OurClients = () => {
       </div>
       
       <div className="flex justify-center items-center space-x-4 mt-6">
-        {images.map((image, index) => (
+        
           <div key={index} className="flex justify-center items-center">
-            <img src={image} className='rounded-full w-32 h-32' alt={`client-${index}`} />
+            <img src={image} className='rounded-full w-32 h-32'  />
           </div>
-        ))}
+
       </div>
     </div>
   );
 };
 
 export default OurClients;
+
+
+
