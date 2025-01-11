@@ -49,25 +49,25 @@ const ContentPage = ({ contents }) => {
 // Sample contents data
 const contents = [
   {
-    img: "https://via.placeholder.com/150",
+    img: "src/assets/clients/black.png",
     num: 123,
     title: "TITLE",
     description: "DESCRIPTION",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "src/assets/clients/black.png",
     num: 123,
     title: "TITLE",
     description: " DESCRIPTION",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "src/assets/clients/black.png",
     num: 123,
     title: "TITLE",
     description: "DESCRIPTION",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "src/assets/clients/black.png",
     num: 123,
     title: "TITLE",
     description: "DESCRIPTION",
