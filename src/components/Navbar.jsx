@@ -18,7 +18,7 @@ const Navbar = () => {
     setIsProductDropdownOpen(false); // Close the other dropdown
   };
   return (
-    <nav className='flex flex-row gap-20 text-black font-semibold text-1xl'>
+    <nav className='flex flex-row gap-24 text-black font-semibold text-1xl'>
       <div><Link to="/"><img src="src/assets/Logo.png" alt="Example Image" className="mt-5 ml-10" style={{ width: "168px", height: "78px" }} /></Link></  div>
       <div className='mt-20 ml-44'><Link to="/about">ABOUT US</Link></div>
      
@@ -29,7 +29,7 @@ const Navbar = () => {
             <ul className="  bg-black mt-2 absolute z-50 text-white rounded-lg shadow-lg w-40">
               <li>
                 <Link to="/DbotTrack" onClick={() => setIsProductDropdownOpen(false)}>
-                  Item 1
+                  DbotTrack
                 </Link>
               </li>
               <li>
@@ -64,7 +64,7 @@ const Navbar = () => {
     
       <div>
         
-        <ul  className='flex mt-20 pb-2 flex-row gap-20' >
+        <ul  className='flex mt-20 pb-2 flex-row gap-24' >
           <li><Link to="/blog">BLOG</Link></li>
           <li><Link to="/contact">CONTACT US</Link></li>
           <li><Link to="/login">LOGIN/SIGNUP</Link></li>

@@ -6,13 +6,13 @@ import Slider from 'react-slick';
 const Header = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed:7000,
     arrows: false,
-    dots: true,
+    dots: false,
   };
 
   return (
@@ -29,9 +29,9 @@ const Header = () => {
         </div>
       </Slider>
       {/* Static Button */}
-      <div className="flex justify-center pb-8 mt-10 items-center  ">
+      <div className="flex justify-center pb-8 mt-6 items-center  ">
       <button
-        className="text-white py-3 px-6 text-lg"
+        className="text-white py-3 rounded-md px-6 text-lg"
         style={{ backgroundColor: '#fcad35' }}
       >
         KNOW MORE

@@ -56,7 +56,7 @@
 <div style={{ background: '#ebebeb' }} className=''>
       <div className="flex justify-between pt-20 pr-20 pb-20">
         {/* Heading */}
-        <h1 className='font-medium text-7xl pl-3'>
+        <h1 className='font-medium text-6xl pl-3 '>
           VISUAL BAND WITH GRAPHICS<br />/IMAGE/COLOR BLOCKING
         </h1>
 

@@ -1,7 +1,8 @@
 import React from "react";
-
+import "./SomeFacts.css"
 // A reusable ContentCard component
 const ContentCard = ({ img, num, title, description }) => {
+  
   return (
     <div className="content-card flex flex-col items-center mt-10  mb-4 w-72 ">
       {/* Image and number in the same row */}
@@ -31,7 +32,7 @@ const ContentPage = ({ contents }) => {
       </div>
 
       {/* Display cards in a row with equal spacing between them */}
-      <div className="content-page flex flex-wrap justify-center gap-10 mt-11">
+      <div className="content-page flex flex-wrap justify-center gap-24 mt-11">
         {contents.map((content, index) => (
           <ContentCard
             key={index}
