@@ -2,7 +2,7 @@ import React from 'react';
 import "./TestimonialCard.css"
 const TestimonialCard = ({ image, name, company }) => {
   return (
-    <div className="relative w-80 px-4 m-4 rounded-2xl p-6">
+    <div className="relative w-80 px-4 m-4 rounded-2xl p-6  ">
       <div className="relative bg-gray-200 rounded-md w-72 p-6">
         {/* Image */}
         <img

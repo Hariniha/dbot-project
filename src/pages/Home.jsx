@@ -1,10 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
-import Info from "../components/Info"
-import OurClients from '../components/OurClients'
-import Somefacts from '../components/Somefacts'
-import Testimonials from '../components/Testimonials'
-import ContactUs from '../components/ContactUs'
+import Header from '../components/Home/Header'
+import Info from "../components/Home/Info"
+import OurClients from '../components/Home/OurClients'
+import Somefacts from '../components/Home/Somefacts'
+import Testimonials from '../components/Home/Testimonials'
+import ContactUs from '../components/Home/ContactUs'
+import Blank from "../components/Home/Blank"
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
         <div><Somefacts/></div>
         <div><Testimonials/></div> 
         <div><ContactUs/></div>
+        <div><Blank/></div>
        
        
 

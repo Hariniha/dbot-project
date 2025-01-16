@@ -1,0 +1,8 @@
+.header{
+    height: 750px; 
+    margin: 20px auto;
+    background: url("/src/assets/Gradient.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+

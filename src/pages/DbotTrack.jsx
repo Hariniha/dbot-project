@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/DbotTrack/Header'
 
 const DbotTrack = () => {
   return (
-    <div>DbotTrack</div>
+    <div>
+      <div><Header/></div>
+    </div>
   )
 }
 
