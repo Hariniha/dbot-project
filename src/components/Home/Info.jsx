@@ -62,7 +62,7 @@ const Dbot = () => {
         <div className="flex flex-col sm:flex-row justify-between px-6 sm:px-20">
           {/* Heading */}
           <h1 className="font-medium text-4xl sm:text-6xl pl-3 mb-6 sm:mb-0">
-            VISUAL BAND WITH GRAPHICS<br />/IMAGE/COLOR BLOCKING
+            VISUAL BAND WITH GRAPHICS<br />/IMAGE/COLOR BLOCKING                        
           </h1>
 
           {/* Button */}
