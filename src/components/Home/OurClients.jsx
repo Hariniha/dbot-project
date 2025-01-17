@@ -9,18 +9,18 @@ const OurClients = () => {
   return (
     <div>
       <div>
-        <h1 className="text-black text-center font-semibold text-4xl py-10 px-25">
+        <h1 className="text-black text-center font-semibold text-4xl py-10 px-6 sm:px-10 md:text-5xl">
           OUR CLIENTS
         </h1>
       </div>
 
-      <div className="flex justify-center gap-20 mt-4">
+      <div className="flex justify-center gap-10 sm:gap-12 md:gap-16 mt-4 flex-wrap">
         {images.map((image, index) => (
-          <img 
-            key={index} 
-            src={image} 
-            alt={`Client ${index + 1}`} 
-            className="h-[201px] w-[201px]  rounded-full object-cover"
+          <img
+            key={index}
+            src={image}
+            alt={`Client ${index + 1}`}
+            className="h-[150px] w-[150px] sm:h-[175px] sm:w-[175px] md:h-[201px] md:w-[201px] rounded-full object-cover"
           />
         ))}
       </div>

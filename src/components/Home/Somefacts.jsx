@@ -1,10 +1,10 @@
 import React from "react";
-import "./SomeFacts.css"
+import "./SomeFacts.css";
+
 // A reusable ContentCard component
 const ContentCard = ({ img, num, title, description }) => {
-  
   return (
-    <div className="content-card flex flex-col items-center mt-10  mb-4 w-72 ">
+    <div className="content-card flex flex-col items-center mt-10 mb-4 w-72 sm:w-64 md:w-80 lg:w-96">
       {/* Image and number in the same row */}
       <div className="flex items-center mb-4">
         <img
@@ -31,8 +31,8 @@ const ContentPage = ({ contents }) => {
         <h2>SOME FACTS</h2>
       </div>
 
-      {/* Display cards in a row with equal spacing between them */}
-      <div className="content-page flex flex-wrap justify-center gap-24 mt-11">
+      {/* Display cards in a row on desktop and wrap on smaller screens */}
+      <div className="content-page flex flex-wrap justify-center gap-8 sm:gap-16 md:gap-24 mt-11 lg:flex-nowrap">
         {contents.map((content, index) => (
           <ContentCard
             key={index}

@@ -6,37 +6,83 @@ import Slider from 'react-slick';
 const Header = () => {
   const settings = {
     infinite: true,
-    speed: 700,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed:7000,
+    autoplaySpeed: 3000,
     arrows: false,
     dots: false,
   };
 
   return (
-    <header className="header-container"  style={{ background: '#ebebeb' }}>
-      <Slider {...settings} className='font-semibold text-6xl text-end leading-tight right-0 pr-6 pt-24 pb-11 '>
-        <div className="slide-content">
-          <h1>TRANSFORMING<br/>AEC INDUSTRY<br/>WITH<br/> DIGITAL INNOVATION </h1>
-        </div>
-        <div className="slide-content">
-          <h1>TRANSFORMING<br/>AEC INDUSTRY<br/>WITH<br/> DIGITAL INNOVATION</h1>
-        </div>
-        <div className="slide-content">
-          <h1>TRANSFORMING<br/>AEC INDUSTRY<br/>WITH<br/> DIGITAL INNOVATION</h1>
-        </div>
-      </Slider>
+    <header className="header-container" style={{ background: '#ebebeb' }}>
+     <Slider
+  {...settings}
+  className="font-semibold text-4xl mb-16 text-end leading-snug right-0 pr-6 pt-24 pb-11 md:text-7xl sm:text-4xl xs:text-2xl"
+  style={{ color: '#48304D' }}
+>
+  <div className="slide-content">
+    <h1>
+      TRANSFORMING
+      <br />
+      AEC INDUSTRY
+      <br />
+      WITH
+      <br />
+      DIGITAL INNOVATION
+    </h1>
+  </div>
+  <div className="slide-content">
+    <h1>
+      TRANSFORMING
+      <br />
+      AEC INDUSTRY
+      <br />
+      WITH
+      <br />
+      DIGITAL INNOVATION
+    </h1>
+  </div>
+  <div className="slide-content">
+    <h1>
+      TRANSFORMING
+      <br />
+      AEC INDUSTRY
+      <br />
+      WITH
+      <br />
+      DIGITAL INNOVATION
+    </h1>
+  </div>
+</Slider>
+
+
       {/* Static Button */}
-      <div className="flex justify-center pb-8 mt-6 items-center  ">
-      <button
-        className="text-white py-3 rounded-md px-6 text-lg"
-        style={{ backgroundColor: '#fcad35' }}
-      >
-        KNOW MORE
-      </button>
-    </div>
+      <div className="flex justify-center px-6 sm:px-20 py-4 ">
+        <button
+          className="py-3 px-5"
+          style={{
+            backgroundColor: '#fcad35',
+            color: '#000000',
+            fontWeight: '600',
+            fontSize: '30px',
+            lineHeight: '36.31px',
+            alignItems: 'center',
+          }}
+        >
+          KNOW MORE
+        </button>
+      </div>
+
+      {/* Dots Navigation */}
+      <div className="gap-3 flex flex-row justify-center  mt-10 pb-10 pt-20 sm:gap-5">
+        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
+        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
+        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
+        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
+        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
+      </div>
     </header>
   );
 };
