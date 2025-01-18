@@ -26,3 +26,9 @@
     animation: fade-right-left 3s forwards;
   }
   
+  .fade-left-right1 {
+    background: linear-gradient(90deg, #879797 40%, rgba(255, 255, 255, 1) 100%);
+    animation: fade-left-right 3s forwards;
+  }
+  
+  

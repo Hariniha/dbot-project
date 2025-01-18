@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Item1 from './pages/DbotTrack';
+import Blank from  "./components/Blank"
 import Product from './pages/Product';
+import DbotTrack from './pages/DbotTrack';
 
 const App = () => {
   return (
@@ -14,12 +15,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          
-      
-          <Route path="/DbotTrack" element={<Item1 />} />
+          <Route path="/DbotTrack" element={<DbotTrack/>} />
           <Route path="/Product" element={<Product/>}/>
-          {/* <Route path="/contact" element={<Contact/>}/> */}
-        </Routes>
+          <Route path="/Blank"   element={<Blank/>}/>
+         </Routes>
       </div>
     </Router>
   );
