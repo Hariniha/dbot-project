@@ -5,7 +5,7 @@ import OurClients from '../components/Home/OurClients'
 import Somefacts from '../components/Home/Somefacts'
 import Testimonials from '../components/Home/Testimonials'
 import ContactUs from '../components/Home/ContactUs'
-
+// import Blank from "../components/Blank"
 
 
 
@@ -20,7 +20,7 @@ const Home = () => {
         <div><Somefacts/></div>
         <div><Testimonials/></div> 
         <div><ContactUs/></div>
-        {/* <div><Blank/></div> */}
+      {/* <div><Blank/></div> */}
        
        
 

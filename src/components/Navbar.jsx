@@ -73,7 +73,7 @@ const Navbar = () => {
               <ul className="bg-white mt-2 absolute z-50 text-black rounded-lg shadow-lg w-40">
                 <li className="pt-1">
                   <Link
-                    to="/1"
+                    to="/DbotTaas"
                     onClick={() => setIsServiceDropdownOpen(false)}
                   >
                     1
@@ -175,7 +175,7 @@ const Navbar = () => {
             {isServiceDropdownOpen && (
               <ul className="pl-4 mt-2 bg-white rounded-lg shadow-lg text-black">
                 <li>
-                  <Link to="/1" onClick={toggleMobileMenu}>
+                  <Link to="/DbotTaas" onClick={toggleMobileMenu}>
                     1
                   </Link>
                 </li>

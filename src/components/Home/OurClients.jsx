@@ -14,13 +14,26 @@ const OurClients = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center gap-10 sm:gap-12 md:gap-16 mt-4 flex-wrap">
+      {/* Mobile Carousel: Horizontal Scroll */}
+      <div className="sm:hidden overflow-x-auto flex gap-10 sm:gap-12 md:gap-16 mt-4 pb-6 hide-scrollbar">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Client ${index + 1}`}
-            className="h-[150px] w-[150px] sm:h-[175px] sm:w-[175px] md:h-[201px] md:w-[201px] rounded-full object-cover"
+            className="h-[150px] w-[150px] sm:h-[175px] sm:w-[175px] md:h-[201px] md:w-[201px] rounded-full object-cover flex-shrink-0"
+          />
+        ))}
+      </div>
+
+      {/* Desktop Grid Layout (for tablet and larger screens) */}
+      <div className="hidden sm:grid sm:grid-cols-3 gap-10 sm:gap-12 md:gap-16 mt-4">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Client ${index + 1}`}
+            className="h-[150px] w-[150px] sm:h-[175px] sm:w-[175px] md:h-[201px] md:w-[201px] rounded-full object-cover mx-auto"
           />
         ))}
       </div>

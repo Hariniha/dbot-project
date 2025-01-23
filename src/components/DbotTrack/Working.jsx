@@ -10,16 +10,16 @@ function Step({ imageSrc, title, description, titleColor }) {
     <div className="flex flex-col items-center mb-2 max-w-sm">
       <div className="relative">
         <div className="w-64 h-64 bg-white rounded-full shadow-lg flex items-center justify-center p-8 mb-6">
-          <img src={imageSrc} alt={title} className="w-[405] h-[405] object-contain" />
+          <img src={imageSrc} alt={title} className="w-[405px] h-[405px] object-contain" />
         </div>
       </div>
       <h3
-        className="text-4xl font-bold uppercase mb-2"
+        className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-2"
         style={{ color: titleColor }} // Hex color applied here
       >
         {title}
       </h3>
-      <p className="text-center text-gray-600 pt- max-w-xs">{description}</p>
+      <p className="text-center text-gray-600 pt-2 max-w-xs text-sm sm:text-base md:text-lg">{description}</p>
     </div>
   );
 }
@@ -27,16 +27,16 @@ function Step({ imageSrc, title, description, titleColor }) {
 function DoubleArrow() {
   return (
     <div className="hidden md:flex items-center pb-36 justify-center">
-      <div className="text-purple-900 text-7xl font-semibold">»</div>
+      <div className="text-purple-900 text-3xl sm:text-5xl md:text-7xl font-semibold">»</div>
     </div>
   );
 }
 
 function Working() {
   return (
-    <div className="min-h-screen py-16 px-4">
+    <div className="min-h-screen py-8 sm:py-12 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-purple-900 mb-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-purple-900 mb-10 sm:mb-16 md:mb-20">
           HOW DOES IT WORK?
         </h2>
 
@@ -79,7 +79,7 @@ function Working() {
             />
             
             {/* Loop Image positioned on top of the Dotted Image */}
-            <div className="absolute z-10  flex justify-center items-center">
+            <div className="absolute z-10 flex justify-center items-center hidden md:block">
               <img 
                 src={Loop} 
                 alt="Loop Icon" 
@@ -89,11 +89,14 @@ function Working() {
             
             {/* Bottom Text */}
             <div className="absolute z-20 text-center mt-32 ml-96 hidden md:block"> {/* Adjust mt-20 for proper spacing */}
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm sm:text-base md:text-lg">
                 Repeat the site capture periodically to<br /> collect the latest data
               </p>
             </div>
           </div>
+
+          {/* Add Bottom Space */}
+          <div className="h-32"></div>
         </div>
       </div>
     </div>
