@@ -1,24 +1,8 @@
 import React from 'react';
+import Line from '../../assets/Line2.png'; // Ensure the correct path to your image
+import image2 from "../../assets/clients/black.png"
 
 function App() {
-  const steps = [
-    {
-      text: "Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text"
-    },
-    {
-      text: "Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text"
-    },
-    {
-      text: "Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text"
-    },
-    {
-      text: "Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text"
-    },
-    {
-      text: "Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -27,20 +11,77 @@ function App() {
         </h1>
         
         <div className="relative">
-          {/* Horizontal Line */}
-          <div className="absolute top-[50px] left-0 right-0 h-[2px] bg-gray-300"></div>
-          
-          {/* Circles and Text */}
-          <div className="flex flex-col sm:flex-row justify-between items-start relative">
-            {steps.map((step, index) => (
-              <div key={index} className="flex flex-col items-center w-full sm:w-1/5 mb-10 sm:mb-0">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gray-100 mb-6 z-10"></div>
-                <p className="text-center text-gray-600 text-sm leading-relaxed sm:text-base">
-                  {step.text}
-                </p>
-              </div>
-            ))}
+          {/* Line Image visible only on larger screens */}
+          <div className="absolute top-[20%] left-1/2 transform -translate-x-1/2 -mb-8 w-[1400px] z-0 hidden sm:block">
+            <img src={Line} alt="Connecting Line" className="mx-auto" />
           </div>
+          
+          <div className="flex flex-col sm:flex-row justify-between items-start relative">
+            
+            {/* Circle 1 (Image) */}
+            <div className="flex flex-col items-center w-full sm:w-1/5 mb-12 sm:mb-0">
+              <img
+                src={image2}// Replace with actual image path
+                alt="Circle 1"
+                className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mb-8 z-10"
+              />
+              <p className="text-center text-gray-600 text-sm leading-relaxed p-8 sm:text-base mb-6">
+                Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text.
+              </p>
+            </div>
+
+            {/* Circle 2 (Image) */}
+            <div className="flex flex-col items-center w-full sm:w-1/5 mb-12 sm:mb-0">
+              <img
+                src={image2} // Replace with actual image path
+                alt="Circle 2"
+                className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mb-8 z-10"
+              />
+              <p className="text-center text-black text-sm leading-relaxed p-8 sm:text-base mb-6">
+                Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text.
+              </p>
+            </div>
+
+            {/* Circle 3 (Image) */}
+            <div className="flex flex-col items-center w-full sm:w-1/5 mb-12 sm:mb-0">
+              <img
+                src={image2} // Replace with actual image path
+                alt="Circle 3"
+                className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mb-8 z-10"
+              />
+              <p className="text-center text-black text-sm leading-relaxed p-8 sm:text-base mb-6">
+                Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text.
+              </p>
+            </div>
+
+            {/* Circle 4 (Image) */}
+            <div className="flex flex-col items-center w-full sm:w-1/5 mb-12 sm:mb-0">
+              <img
+                src={image2} // Replace with actual image path
+                alt="Circle 4"
+                className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mb-8 z-10"
+              />
+              <p className="text-center text-black text-sm leading-relaxed p-8 sm:text-base mb-6">
+                Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text.
+              </p>
+            </div>
+
+            {/* Circle 5 (Image) */}
+            <div className="flex flex-col items-center w-full sm:w-1/5 mb-12 sm:mb-0">
+              <img
+                src={image2} // Replace with actual image path
+                alt="Circle 5"
+                className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mb-8 z-10"
+              />
+              <p className="text-center text-black text-sm leading-relaxed p-8 sm:text-base mb-6">
+                Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text.
+              </p>
+            </div>
+
+          </div>
+
+          {/* Line Image under the Circles - Only visible on screens larger than "sm" */}
+         
         </div>
       </div>
     </div>

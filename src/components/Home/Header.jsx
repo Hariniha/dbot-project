@@ -16,10 +16,10 @@ const Header = () => {
   };
 
   return (
-    <header className="header-container" style={{ background: '#ebebeb' }}>
+    <header className="header-container" style={{ background: '#EAEAEA' }}>
      <Slider
   {...settings}
-  className="font-semibold text-4xl mb-16 text-end leading-snug right-0 pr-6 pt-24 pb-11 md:text-7xl sm:text-4xl xs:text-2xl"
+  className="font-inter font-semibold text-4xl mb-16 text-end leading-snug right-0 pr-6 pt-24 pb-11 md:text-7xl sm:text-4xl xs:text-2xl"
   style={{ color: '#48304D' }}
 >
   <div className="slide-content">
@@ -59,13 +59,13 @@ const Header = () => {
 
 
       {/* Static Button */}
-      <div className="flex justify-center px-6 sm:px-20 py-4 ">
+      <div className="flex justify-center px-6 sm:px-20 py-4 font-inter font-semibold">
         <button
           className="py-3 px-5"
           style={{
-            backgroundColor: '#fcad35',
+            backgroundColor: '#FCAC35',
             color: '#000000',
-            fontWeight: '600',
+            
             fontSize: '30px',
             lineHeight: '36.31px',
             alignItems: 'center',
@@ -76,7 +76,7 @@ const Header = () => {
       </div>
 
       {/* Dots Navigation */}
-      <div className="gap-3 flex flex-row justify-center  mt-10 pb-10 pt-20 sm:gap-5">
+      <div className="gap-3 flex flex-row justify-center  mt-10 pb-10 pt-16 sm:gap-5">
         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>
         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#879797' }}></div>

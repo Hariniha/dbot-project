@@ -1,5 +1,5 @@
 import React from "react";
-import "./SomeFacts.css";
+
 
 // A reusable ContentCard component
 const ContentCard = ({ img, num, title, description }) => {
@@ -12,12 +12,12 @@ const ContentCard = ({ img, num, title, description }) => {
           alt={title}
           className="content-img w-10 h-10 rounded-full object-cover mr-4" // mr-4 for spacing between image and text
         />
-        <h2 className="content-num text-5xl font-bold">{num}</h2>
+        <h2 className="content-num text-7xl text-[#48304D] font-inter font-bold">{num}</h2>
       </div>
 
       {/* Title and description in the same column */}
-      <h3 className="content-title text-3xl ml-14 pt-1 font-semibold">{title}</h3>
-      <p className="content-description text-2xl pt-1 ml-14 font-light text-gray-600">{description}</p>
+      <h3 className="content-title text-3xl ml-14 pt-1 font-inter font-normal">{title}</h3>
+      <p className="content-description text-2xl pt-1 ml-14 font-inter font-extralight ">{description}</p>
     </div>
   );
 };
@@ -27,7 +27,7 @@ const ContentPage = ({ contents }) => {
   return (
     <div className="mt-11">
       {/* Center the "SOME FACTS" heading */}
-      <div className="font-semibold text-3xl text-center mb-8">
+      <div className="font-semibold text-[#48304D]  md:text-5xl font-inter text-4xl text-center py-10">
         <h2>SOME FACTS</h2>
       </div>
 

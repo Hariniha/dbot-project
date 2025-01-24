@@ -3,7 +3,7 @@ import React from 'react';
 const ContactUs = () => {
   return (
     <div className="flex flex-col items-center mt-11 mb-5 px-4 sm:px-8">
-      <h1 className="text-3xl font-semibold text-center text-gray-800 mb-8">CONTACT US</h1>
+      <h1 className="text-4xl font-semibold text-center  md:text-5xl  text-[#48304D] mb-16">CONTACT US</h1>
       <div 
         className="w-full sm:w-[550px] h-auto max-w-lg items-center p-8 sm:p-10 shadow-[0_0_5px_0_rgba(0,0,0,0.2)] bg-white rounded-2xl "
       >
@@ -13,7 +13,7 @@ const ContactUs = () => {
             id="name" 
             name="name" 
             required 
-            className="mb-4 border h-14 sm:h-16 w-full sm:w-80 shadow-[inset_0_0_5px_0_rgba(0,0,0,0.1)]p-4"
+            className="mb-4 border h-14 sm:h-16 w-full sm:w-80 shadow-[inset_0_0_5px_0_rgba(0,0,0,0.1)] p-4"
           />
           <input 
             type="email" 

@@ -6,7 +6,7 @@ import About from './pages/About';
 import Product from './pages/Product';
 import DbotTrack from './pages/DbotTrack';
 import DbotTaas from "./pages/DbotTaas";
-import Blank from './components/Blank';
+// import Blank from './components/Blank';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/Product" element={<Product/>}/>
            <Route path="/DbotTaas"  element={<DbotTaas/>}/>
          </Routes>
-         <Blank/>
+         {/* <Blank/> */}
       </div>
     </Router>
   );

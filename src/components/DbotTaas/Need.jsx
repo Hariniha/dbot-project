@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image1 from "../../assets/clients/black.png"
 function Need() {
   return (
     <div className="min-h-screen bg-white py-16 px-4">
@@ -9,26 +9,38 @@ function Need() {
         </h1>
 
         {/* Responsive Flexbox Layout */}
-        <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-16">
-          {/* First Circle */}
+        <div className="flex flex-col sm:flex-row justify-center gap-16">
+          {/* First Circle (Image) */}
           <div className="flex flex-col items-center w-full sm:w-1/3">
-            <div className="w-48 sm:w-64 md:w-72 h-48 sm:h-64 md:h-72 rounded-full bg-gray-100 mb-6"></div>
+            <img 
+              src={image1} 
+              alt="Circle 1" 
+              className="w-72 sm:w-72 h-72 sm:h-72 rounded-full mb-6"
+            />
             <p className="text-center text-gray-600 max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
               Lorem ipsum is simply dummy text
             </p>
           </div>
 
-          {/* Second Circle */}
+          {/* Second Circle (Image) */}
           <div className="flex flex-col items-center w-full sm:w-1/3">
-            <div className="w-48 sm:w-64 md:w-72 h-48 sm:h-64 md:h-72 rounded-full bg-gray-100 mb-6"></div>
+            <img 
+              src={image1} 
+              alt="Circle 2" 
+              className="w-72 sm:w-72 h-72 sm:h-72 rounded-full mb-6"
+            />
             <p className="text-center text-gray-600 max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
               Lorem ipsum is simply dummy text
             </p>
           </div>
 
-          {/* Third Circle */}
+          {/* Third Circle (Image) */}
           <div className="flex flex-col items-center w-full sm:w-1/3">
-            <div className="w-48 sm:w-64 md:w-72 h-48 sm:h-64 md:h-72 rounded-full bg-gray-100 mb-6"></div>
+            <img 
+              src={image1} 
+              alt="Circle 3" 
+              className="w-72 sm:w-72 h-72 sm:h-72 rounded-full mb-6"
+            />
             <p className="text-center text-gray-600 max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
               Lorem ipsum is simply dummy text
             </p>

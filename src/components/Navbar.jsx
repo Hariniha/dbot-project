@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative flex flex-wrap items-center justify-between p-4 text-black font-semibold text-1xl shadow-[0_4px_6px_0_rgba(0,0,0,0.3)]">
+    <nav className="relative flex flex-wrap font-medium items-center justify-between p-4  font-inter text-[#000000]  text-1xl shadow-[0_4px_6px_0_rgba(0,0,0,0.3)]" >
       {/* Logo */}
       <div>
         <Link to="/">
@@ -44,11 +44,12 @@ const Navbar = () => {
           <button onClick={toggleProductDropdown}>OUR PRODUCT</button>
           {isProductDropdownOpen && (
             <div>
-              <ul className="bg-black mt-2 absolute z-50 text-white rounded-lg shadow-lg w-40">
+              <ul className="bg-white space-y-2 mt-4 p-3 absolute z-50 text-black rounded-lg shadow-lg w-40">
                 <li>
                   <Link
                     to="/DbotTrack"
                     onClick={() => setIsProductDropdownOpen(false)}
+                    className=''
                   >
                     DbotTrack
                   </Link>
@@ -70,13 +71,13 @@ const Navbar = () => {
           <button onClick={toggleServiceDropdown}>OUR SERVICE</button>
           {isServiceDropdownOpen && (
             <div>
-              <ul className="bg-white mt-2 absolute z-50 text-black rounded-lg shadow-lg w-40">
+              <ul className="bg-white space-y-2 mt-4 p-2 absolute z-50 text-black rounded-lg shadow-lg w-40">
                 <li className="pt-1">
                   <Link
                     to="/DbotTaas"
                     onClick={() => setIsServiceDropdownOpen(false)}
                   >
-                    1
+                    DbotTaas
                   </Link>
                 </li>
                 <li>
@@ -149,7 +150,7 @@ const Navbar = () => {
               OUR PRODUCT
             </button>
             {isProductDropdownOpen && (
-              <ul className="pl-4 mt-2 bg-white rounded-lg shadow-lg text-black">
+              <ul className="space-y-2 mt-4 p-3 bg-white rounded-lg shadow-lg text-black">
                 <li>
                   <Link to="/DbotTrack" onClick={toggleMobileMenu}>
                     DbotTrack
@@ -173,10 +174,10 @@ const Navbar = () => {
               OUR SERVICE
             </button>
             {isServiceDropdownOpen && (
-              <ul className="pl-4 mt-2 bg-white rounded-lg shadow-lg text-black">
+              <ul className="space-y-2 mt-4 p-3 bg-white rounded-lg shadow-lg text-black">
                 <li>
                   <Link to="/DbotTaas" onClick={toggleMobileMenu}>
-                    1
+                    DbotTaas
                   </Link>
                 </li>
                 <li>

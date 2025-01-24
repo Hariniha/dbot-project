@@ -9,23 +9,23 @@ function Step({ imageSrc, title, description, titleColor }) {
   return (
     <div className="flex flex-col items-center mb-2 max-w-sm">
       <div className="relative">
-        <div className="w-64 h-64 bg-white rounded-full shadow-lg flex items-center justify-center p-8 mb-6">
+        <div className="w-64 h-64 bg-white rounded-full shadow-[5px_0_1px_0_rgba(0,0,0,0.2)] flex items-center justify-center p-8 mb-6">
           <img src={imageSrc} alt={title} className="w-[405px] h-[405px] object-contain" />
         </div>
       </div>
       <h3
-        className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-2"
+        className="text-2xl sm:text-3xl font-oswald  md:text-4xl font-bold uppercase mb-2"
         style={{ color: titleColor }} // Hex color applied here
       >
         {title}
       </h3>
-      <p className="text-center text-gray-600 pt-2 max-w-xs text-sm sm:text-base md:text-lg">{description}</p>
+      <p className="text-center text-gray-600 pt-2 max-w-md font-comfortaa  font-light   ">{description}</p>
     </div>
   );
 }
 
 function DoubleArrow() {
-  return (
+  return ( 
     <div className="hidden md:flex items-center pb-36 justify-center">
       <div className="text-purple-900 text-3xl sm:text-5xl md:text-7xl font-semibold">»</div>
     </div>
@@ -36,7 +36,7 @@ function Working() {
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-purple-900 mb-10 sm:mb-16 md:mb-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-oswald text-center text-[#48304D] mb-6 sm:mb-16 md:mb-20">
           HOW DOES IT WORK?
         </h2>
 
@@ -57,6 +57,7 @@ function Working() {
               title="Site Capturing"
               description="Connect a 360 camer, mount it on a safety helmet, and start recording the site floor wise, following the SOP in the application."
               titleColor="#C9C9C9" // Custom color
+             
             />
 
             <DoubleArrow />
@@ -75,21 +76,21 @@ function Working() {
             <img 
               src={DotImage} 
               alt="Dotted Path" 
-              className="hidden md:block absolute -bottom-16 -right-20 w-3/4 mx-auto" 
+              className="hidden md:block absolute -bottom-7 -right-4 w-4/6" 
             />
             
             {/* Loop Image positioned on top of the Dotted Image */}
-            <div className="absolute z-10 flex justify-center items-center hidden md:block">
+            <div className="absolute z-10 -bottom-20  justify-center items-center hidden md:block">
               <img 
                 src={Loop} 
                 alt="Loop Icon" 
-                className="md:w-16 md:h-16 lg:w-28 lg:h-28 ml-96" // Scalable sizes for different breakpoints
+                className="md:w-16 md:h-16  lg:w-28 lg:h-28 ml-96" // Scalable sizes for different breakpoints
               />
             </div>
             
             {/* Bottom Text */}
-            <div className="absolute z-20 text-center mt-32 ml-96 hidden md:block"> {/* Adjust mt-20 for proper spacing */}
-              <p className="text-gray-600 text-sm sm:text-base md:text-lg">
+            <div className="absolute z-20 text-center mt-20 pt-5 ml-96 hidden md:block"> {/* Adjust mt-20 for proper spacing */}
+              <p className="text-black font-comfortaa font-light md:text-lg">
                 Repeat the site capture periodically to<br /> collect the latest data
               </p>
             </div>

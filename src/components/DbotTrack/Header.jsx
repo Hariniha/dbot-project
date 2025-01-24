@@ -11,15 +11,15 @@ const Header = () => {
       <div className="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-between px-4 z-10">
         {/* Text Section */}
         <div className="text-center lg:text-left lg:ml-5 lg:mt-10 mb-8 lg:mb-0">
-          <h2 className="text-white font-bold text-4xl sm:text-5xl md:text-6xl">
+          <h2 className="text-[#E8ECED] font-semibold font-oswald text-7xl sm:text-4xl md:text-7xl ">
             DBOT TRACK
           </h2>
-          <p className="text-white mt-4 text-lg sm:text-xl md:text-2xl">
+          <p className="text-[#E8ECED] mt-4 font-comfortaa font-medium  md:text-2xl">
             Your SaaS tool to Capture, Visualize and Analyze
             <br /> construction sites, at ease.
           </p>
           <button
-            className="text-xl sm:text-2xl py-3 px-6 font-semibold mt-6 text-black"
+            className="text-xl sm:text-2xl py-3 px-6 font-semibold font-inter mt-14 text-black"
             style={{ backgroundColor: '#fcad35' }}
           >
             KNOW MORE
