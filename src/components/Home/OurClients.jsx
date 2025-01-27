@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/Ourclients.css"
 
 const OurClients = () => {
   // Use import.meta.glob to fetch all images in the folder
@@ -9,7 +10,7 @@ const OurClients = () => {
   return (
     <div>
       <div>
-        <h1 className="text-[#48304D] text-center font-semibold font-inter text-4xl py-10 sm:px-10 md:text-5xl">
+        <h1 className="client text-[#48304D] text-center font-semibold font-inter text-4xl py-10 sm:px-10 md:text-5xl">
           OUR CLIENTS
         </h1>
       </div>

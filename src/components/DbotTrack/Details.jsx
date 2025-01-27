@@ -1,20 +1,23 @@
 import React from 'react';
+import "./css/Details.css"
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="Details min-h-screen">
+      <div className='h-[793px] w-full bg-[#E8ECED]'></div>
       {/* Hero Section */}
       <div className="">
-        <div className="max-w-7xl h-80 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mt-20 h-80 mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold font-oswald text-center text-gray-900 mb-8">
             Why Choose Us?
           </h1>
 
         </div>
       </div>
+     
 
       {/* Technology Section */}
-      <div className="py-24 bg-white">
+      <div className="Details1 py-24 bg-white" id='details'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-inter text-center text-gray-900 mb-16">
             OUR TECHNOLOGY
@@ -24,7 +27,7 @@ function App() {
             {/* Digital Twin */}
             <div className="flex flex-col items-center text-center">
             <h3 className="text-lg sm:text-xl font-inter font-semibold text-[#48304D] mb-4">DIGITAL TWIN</h3>
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-blue-50 flex items-center justify-center mb-6">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-[#EAEAEA] flex items-center justify-center mb-6">
                 {/* Add image or icon here */}
               </div>
               
@@ -36,7 +39,7 @@ function App() {
             {/* Spatial Intelligence */}
             <div className="flex flex-col items-center text-center">
             <h3 className="text-lg sm:text-xl font-inter font-semibold text-[#48304D] mb-4">SPATIAL INTELLIGENCE</h3>
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-green-50 flex items-center justify-center mb-6">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-[#EAEAEA]  flex items-center justify-center mb-6">
                 {/* Add image or icon here */}
               </div>
               
@@ -48,7 +51,7 @@ function App() {
             {/* AI Insights */}
             <div className="flex flex-col items-center text-center">
             <h3 className="text-lg sm:text-xl font-inter font-semibold text-[#48304D] mb-4">AI INSIGHTS</h3>
-              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-purple-50 flex items-center justify-center mb-6">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-[#EAEAEA]  flex items-center justify-center mb-6">
                 {/* Add image or icon here */}
               </div>
              

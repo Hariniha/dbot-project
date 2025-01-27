@@ -4,10 +4,11 @@ import DbotTrack1 from "../../assets/DbotTrack1.png";
 import DbotTrack2 from "../../assets/DbotTrack2.png";
 import DbotTrack3 from "../../assets/DbotTrack3.png";
 import DotImage from "../../assets/Dot2.png"; // Adjust the path according to your project structure
+import "./css/Working.css"
 
 function Step({ imageSrc, title, description, titleColor }) {
   return (
-    <div className="flex flex-col items-center mb-2 max-w-sm">
+    <div className=" cards flex flex-col items-center mb-2 max-w-sm">
       <div className="relative">
         <div className="w-64 h-64 bg-white rounded-full shadow-[5px_0_1px_0_rgba(0,0,0,0.2)] flex items-center justify-center p-8 mb-6">
           <img src={imageSrc} alt={title} className="w-[405px] h-[405px] object-contain" />
@@ -76,7 +77,7 @@ function Working() {
             <img 
               src={DotImage} 
               alt="Dotted Path" 
-              className="hidden md:block absolute -bottom-7 -right-4 w-4/6" 
+              className="hidden md:block absolute -bottom-9 -right-8 w-[70%] " 
             />
             
             {/* Loop Image positioned on top of the Dotted Image */}
@@ -90,7 +91,7 @@ function Working() {
             
             {/* Bottom Text */}
             <div className="absolute z-20 text-center mt-20 pt-5 ml-96 hidden md:block"> {/* Adjust mt-20 for proper spacing */}
-              <p className="text-black font-comfortaa font-light md:text-lg">
+              <p className="text text-black font-comfortaa font-light md:text-lg">
                 Repeat the site capture periodically to<br /> collect the latest data
               </p>
             </div>

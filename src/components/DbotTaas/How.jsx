@@ -4,7 +4,8 @@ import image2 from "../../assets/clients/black.png"
 
 function App() {
   return (
-    <div className="min-h-screen bg-white py-16 px-4">
+    <div className="min-h-screen bg-white  pb-10 px-4">
+      
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-[#4A2B5C] mb-20">
           HOW WE DO IT?
@@ -71,7 +72,7 @@ function App() {
               <img
                 src={image2} // Replace with actual image path
                 alt="Circle 5"
-                className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mb-8 z-10"
+                className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full mb-8 z-10"
               />
               <p className="text-center text-black text-sm leading-relaxed p-8 sm:text-base mb-6">
                 Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text. Lorem ipsum is simply dummy text.

@@ -1,0 +1,26 @@
+.Header h1{
+ font-family: "comfortaa";
+ font-weight: 600;
+}
+
+.Header h2{
+    font-family: "comfortaa";
+    font-weight: 500;
+   
+}
+
+.Header p{
+    font-family: "comfortaa";
+    font-weight: 300;
+   
+}
+
+.Header ul{
+    font-family: "inter";
+    font-weight: 700;
+}
+
+button{
+    font-family: "inter";
+    font-weight: 600;
+}

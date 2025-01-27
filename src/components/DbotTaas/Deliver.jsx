@@ -1,10 +1,11 @@
 import React from 'react';
 import Line from "../../assets/line.png"; // Ensure the path to your line image is correct
 import CircleImage from "../../assets/clients/black.png"; // Replace with the path to your circle image
+import "./css/Deliver.css"
 
 function Deliver() {
   return (
-    <div className="min-h-screen bg-white mt-20 py-16 px-4">
+    <div className=" Deliver min-h-screen bg-white mt-20 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-inter font-semibold text-center text-[#4A2B5C] mb-16">
           WHAT WE DELIVER?

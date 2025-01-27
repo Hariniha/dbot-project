@@ -1,0 +1,9 @@
+.info h1,button{
+    font-family: "inter";
+    font-weight: 600;
+}
+
+.info p{
+    font-family: "inter";
+    font-weight: 300;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import video from "../../assets/video.png";
 import comingSoon from "../../assets/coming-soon.png";
+import "./css/Header.css"
 
 const Header = () => {
   return (
@@ -11,16 +12,16 @@ const Header = () => {
       <div className="absolute inset-0 flex flex-col-reverse lg:flex-row items-center justify-between px-4 z-10">
         {/* Text Section */}
         <div className="text-center lg:text-left lg:ml-5 lg:mt-10 mb-8 lg:mb-0">
-          <h2 className="text-[#E8ECED] font-semibold font-oswald text-7xl sm:text-4xl md:text-7xl ">
+          <h2 className=" text-[#E8ECED]  text-7xl sm:text-4xl md:text-7xl"id='title'>
             DBOT TRACK
           </h2>
-          <p className="text-[#E8ECED] mt-4 font-comfortaa font-medium  md:text-2xl">
+          <p className="text-[#E8ECED] mt-4 font-comfortaa font-medium  md:text-2xl" id='content'>
             Your SaaS tool to Capture, Visualize and Analyze
-            <br /> construction sites, at ease.
+           construction sites, at ease.
           </p>
           <button
-            className="text-xl sm:text-2xl py-3 px-6 font-semibold font-inter mt-14 text-black"
-            style={{ backgroundColor: '#fcad35' }}
+            className="text-xl sm:text-2xl py-3 px-6 font-semibold font-inter mt-8 text-black"
+            style={{ backgroundColor: '#fcad35',fontFamily:"inter",fontWeight:"600" }}
           >
             KNOW MORE
           </button>

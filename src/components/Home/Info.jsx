@@ -2,17 +2,17 @@ import React from 'react';
 
 const Dbot = () => {
   return (
-    <div>
+    <div className='info'>
       {/* First Section */}
-      <div className=" sm:ml-6 mt-16 sm:mt-24 relative">
-  <h1 className="font-semibold  font-inter text-[#48304D] pb-5 text-3xl sm:text-4xl  text-center sm:text-left">
+      <div className=" sm:ml-9 mt-16 sm:mt-24 relative">
+  <h1 className=" text-[#48304D] pb-5 text-3xl sm:text-4xl  text-center sm:text-left">
     WHAT IS DBOT?
   </h1>
 
   {/* Paragraph and Box Wrapper */}
-  <div className="flex flex-col sm:flex-row items-start mt-7 gap-6 sm:gap-10">
+  <div className="flex flex-col sm:flex-row items-start mt-3 gap-6 sm:gap-10">
     {/* Paragraph */}
-    <p className="text-justify font-inter max-w-full sm:max-w-[70%] md:max-w-[60%] lg:max-w-[80%] leading-8 sm:leading-8 mt-10 relative z-10">
+    <p  className="text-justify  sm:w-2/4 sm:max-w-[70%] md:max-w-[60%] leading-8 sm:leading-8 mt-10 px-4 sm:px-0 relative z-10">
       Dbot is a technology company focused on improving efficiency in the AEC industry by using digital tools,
       connecting systems, and automating tasks. Dbot is a technology company focused on improving efficiency in the AEC
       industry by using digital tools, connecting systems, and automating tasks. Dbot is a technology company focused
@@ -32,31 +32,30 @@ const Dbot = () => {
 </div>
 
 
-      {/* Spacing Between Sections */}
-      <div className="h-40 sm:h-20"></div>
+  
 
       {/* Second Section */}
       <div className="relative my-36">
         {/* The Colored Box on the Left */}
         <div
           style={{ background: '#ebebeb' }}
-          className="h-64 sm:h-80 w-full sm:w-3/4 pt-10 absolute left-0 top-16 z-0"
+          className=" absolute left-0 top-16 z-0 h-64 sm:h-80 md:h-[400px] lg:h-[350px] w-full sm:w-2/3 md:w-2/3 lg:w-3/4 pt-10 sm:pt-36"
         ></div>
 
-        <div className="ml-6 sm:ml-7  relative z-10">
+        <div className="mr-6  relative z-10">
           {/* Heading */}
-          <h1 className="font-semibold  font-inter text-[#48304D] pb-5 text-3xl sm:text-4xl   text-end mr-6">THE AEC INDUSTRY</h1>
-
+          <h1 className=" text-[#48304D] pb-5 text-3xl sm:text-4xl   text-end mr-6">THE AEC INDUSTRY</h1>
+          {/* <p  className="text-justify font-inter w-full sm:max-w-[70%] md:max-w-[60%] leading-8 sm:leading-8 mt-10 px-4 sm:px-0 relative z-10"> */}
           {/* Paragraph */}
-          <div className="text-justify max-w-full sm:max-w-[90%] mr-6 pt-9 leading-8 relative z-10 ml-auto">
+          <div className="text-justify  sm:w-2/4 sm:max-w-[70%] md:max-w-[90%] mt-10  sm:px-0 px-4 leading-8 sm:leading-8 relative md:mr-0 z-10 ml-auto ">
             <p>
-              Dbot is a technology company focused on improving efficiency in the AEC industry by using digital tools, 
-              connecting systems, and automating tasks. Dbot is a technology company focused on improving efficiency in the AEC industry by
-              using digital tools, connecting systems, and automating tasks. Dbot is a technology company focused on 
-              improving efficiency in the AEC industry by using digital tools, connecting systems, and automating tasks. 
-              Dbot is a technology company focused on improving efficiency in the AEC industry by using digital tools, 
-              connecting systems, and automating tasks. Dbot is a technology company focused on improving efficiency in the AEC industry by 
-              using digital tools, connecting systems, and automating tasks.
+            Dbot is a technology company focused on improving efficiency in the AEC industry by using digital tools,
+      connecting systems, and automating tasks. Dbot is a technology company focused on improving efficiency in the AEC
+      industry by using digital tools, connecting systems, and automating tasks. Dbot is a technology company focused
+      on improving efficiency in the AEC industry by using digital tools, connecting systems, and automating tasks.
+      Dbot is a technology company focused on improving efficiency in the AEC industry by using digital tools,
+      connecting systems, and automating tasks. Dbot is a technology company focused on improving efficiency in the AEC
+      industry by using digital tools, connecting systems, and automating tasks.
             </p>
           </div>
         </div>
@@ -67,14 +66,14 @@ const Dbot = () => {
       <div style={{ background: '#ebebeb' }} className="py-10 sm:pb-20 pt-20">
         <div className="flex flex-col sm:flex-row justify-between px-6 sm:px-20">
           {/* Heading */}
-          <h1 className="font-medium text-4xl sm:text-6xl text-[#48304D] pl-3 mb-6 sm:mb-0">
+          <h1 className=" text-4xl sm:text-6xl text-[#48304D] pl-3 mb-6 sm:mb-0">
             VISUAL BAND WITH GRAPHICS<br />/IMAGE/COLOR BLOCKING                        
           </h1>
 
           {/* Button */}
           <div className="pt-9">
             <button 
-              className="text-black font-medium text-xl pl-8 mr-8 inline-flex items-center" 
+              className="text-black  text-xl pl-8 mr-8 inline-flex items-center" 
               style={{ backgroundColor: '#fcad35', height: '50px', width: '200px' }}>
               KNOW MORE
             </button>

@@ -31,4 +31,46 @@
     animation: fade-left-right 3s forwards;
   }
   
+  #title1{
+    font-family: "oswald";
+    font-weight: 600;
+  }
+
+  #content1{
+    font-family:"comfortaa";
+    font-weight: 300;
+  }
+
+  span{
+    font-weight: 700;
+  }
+  .capture h2{
+    font-family: "oswald";
+    font-weight: 600;
+  }
+ .capture p{
+  font-family: "comfortaa";
+  font-weight: 700;
+ }
+  
+ .visualize h2{
+  font-family: "oswald";
+  font-weight: 600;
+
+ }
+ .visualize p{
+  font-family: "comfortaa";
+  font-weight: 700;
+}
+
+  .analyze p{
+    font-family: "comfortaa";
+    font-weight: 700;
+  }
+
+  .analyze h2{
+    font-family: "oswald";
+    font-weight: 600;
+  }
+  
   

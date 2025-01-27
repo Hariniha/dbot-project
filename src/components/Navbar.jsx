@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import "../App.css";
+import arrow from "../assets/arro.png"
 
 const Navbar = () => {
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
@@ -21,21 +23,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative flex flex-wrap font-medium items-center justify-between p-4  font-inter text-[#000000]  text-1xl shadow-[0_4px_6px_0_rgba(0,0,0,0.3)]" >
+    <div className='Navbar'>
+    <nav className=" relative flex flex-wrap items-center h-24  justify-between p-2    text-1xl shadow-[0_4px_6px_0_rgba(0,0,0,0.3)]" >
       {/* Logo */}
-      <div>
-        <Link to="/">
-          <img
-            src="src/assets/Logo.png"
-            alt="Example Image"
-            className="mt-2 ml-2 sm:mt-5 sm:ml-10"
-            style={{ width: '168px', height: '78px' }}
-          />
-        </Link>
-      </div>
+      <div className='relative bottom-[1px] sm:bottom-[28px]'>
+  <Link to="/">
+    <img
+      src="src/assets/Logo.png"
+      alt="Example Image"
+      className="mt-2 ml-2 sm:mt-5 sm:ml-10"
+      style={{ width: '100px', height: '50px' }}
+    />
+  </Link>
+</div>
+
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex md:items-center md:gap-8 lg:gap-24">
+      <div className="des hidden md:flex  text-black relative bottom-[45px]  md:items-center md:gap-8 lg:gap-24 z-50" >
         <div className="mt-24 ml-4">
           <Link to="/about">ABOUT US</Link>
         </div>
@@ -49,7 +53,7 @@ const Navbar = () => {
                   <Link
                     to="/DbotTrack"
                     onClick={() => setIsProductDropdownOpen(false)}
-                    className=''
+                    className='des'
                   >
                     DbotTrack
                   </Link>
@@ -58,6 +62,7 @@ const Navbar = () => {
                   <Link
                     to="/item2"
                     onClick={() => setIsProductDropdownOpen(false)}
+                    className='des'
                   >
                     Item 2
                   </Link>
@@ -71,7 +76,7 @@ const Navbar = () => {
           <button onClick={toggleServiceDropdown}>OUR SERVICE</button>
           {isServiceDropdownOpen && (
             <div>
-              <ul className="bg-white space-y-2 mt-4 p-2 absolute z-50 text-black rounded-lg shadow-lg w-40">
+              <ul className="bg-white des space-y-2 mt-4 p-2 absolute z-50 text-black rounded-lg shadow-lg w-40">
                 <li className="pt-1">
                   <Link
                     to="/DbotTaas"
@@ -93,15 +98,15 @@ const Navbar = () => {
           )}
         </div>
 
-        <ul className="flex mt-24 pb-2  mr-8 flex-row gap-8 lg:gap-24">
+        <ul className="flex mt-24 pb-2 des  top-[4px]  mr-8 flex-row gap-8 lg:gap-24">
           <li>
-            <Link to="/blog">BLOG</Link>
+            <Link to="/blog"className='des'>BLOG</Link>
           </li>
           <li>
-            <Link to="/contact">CONTACT US</Link>
+            <Link to="/contact"className='des'>CONTACT US</Link>
           </li>
           <li>
-            <Link to="/login">LOGIN/SIGNUP</Link>
+            <Link to="/login"className='des'>LOGIN/SIGNUP</Link>
           </li>
         </ul>
       </div>
@@ -123,15 +128,15 @@ const Navbar = () => {
 
       {/* Mobile Menu Sliding In from the Right */}
       <div
-        className={`fixed top-0 right-0 h-full bg-gray-100 shadow-lg p-4 transform ${
+        className={`des fixed top-0 right-0 h-full bg-gray-100 shadow-lg p-4 transform ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } transition-transform duration-300 w-64 z-40`}
+        } transition-transform duration-300 w-64 z-40 `}
       >
         <button
           onClick={toggleMobileMenu}
-          className="text-black font-bold text-lg mb-4"
+          className="text-black font-bold text-4xl mb-4"
         >
-          Close
+          <img src={arrow}/>
         </button>
 
         {/* Mobile Menu Items */}
@@ -207,6 +212,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+    </div>
   );
 };
 

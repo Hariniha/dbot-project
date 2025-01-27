@@ -1,8 +1,9 @@
 import React from 'react';
 import image1 from "../../assets/clients/black.png"
+import "./css/Need.css"
 function Need() {
   return (
-    <div className="min-h-screen bg-white py-16 px-4">
+    <div className="min-h-screen bg-white mb-20 pt-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-[#4A2B5C] mb-16">
           WHAT WE NEED FROM YOU?
@@ -15,7 +16,7 @@ function Need() {
             <img 
               src={image1} 
               alt="Circle 1" 
-              className="w-72 sm:w-72 h-72 sm:h-72 rounded-full mb-6"
+              className="w-56 sm:w-60 h-56 sm:h-60 rounded-full mb-6"
             />
             <p className="text-center text-gray-600 max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
               Lorem ipsum is simply dummy text
@@ -27,7 +28,7 @@ function Need() {
             <img 
               src={image1} 
               alt="Circle 2" 
-              className="w-72 sm:w-72 h-72 sm:h-72 rounded-full mb-6"
+              className="w-56 sm:w-60 h-56 sm:h-60 rounded-full mb-6"
             />
             <p className="text-center text-gray-600 max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
               Lorem ipsum is simply dummy text
@@ -39,7 +40,7 @@ function Need() {
             <img 
               src={image1} 
               alt="Circle 3" 
-              className="w-72 sm:w-72 h-72 sm:h-72 rounded-full mb-6"
+              className="w-56 sm:w-60 h-56 sm:h-60 rounded-full mb-6"
             />
             <p className="text-center text-gray-600 max-w-[200px] sm:max-w-[250px] md:max-w-[300px]">
               Lorem ipsum is simply dummy text

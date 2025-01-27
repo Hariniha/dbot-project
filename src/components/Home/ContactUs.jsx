@@ -1,9 +1,10 @@
 import React from 'react';
+import "./css/Contact.css"
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col items-center mt-11 mb-5 px-4 sm:px-8">
-      <h1 className="text-4xl font-semibold text-center  md:text-5xl  text-[#48304D] mb-16">CONTACT US</h1>
+    <div className="contact flex flex-col items-center mt-11 mb-5 px-4 sm:px-8">
+      <h1 className="text-4xl  text-center  md:text-5xl  text-[#48304D] mb-16">CONTACT US</h1>
       <div 
         className="w-full sm:w-[550px] h-auto max-w-lg items-center p-8 sm:p-10 shadow-[0_0_5px_0_rgba(0,0,0,0.2)] bg-white rounded-2xl "
       >
@@ -38,7 +39,7 @@ const ContactUs = () => {
           <div className="flex justify-center mt-4">
   <button 
     type="submit" 
-    className="text-black text-lg sm:text-xl md:text-3xl w-full sm:w-60 lg:w-72 h-12 sm:h-14 lg:h-16 font-semibold" 
+    className="text-black text-lg sm:text-xl md:text-3xl w-full sm:w-60 lg:w-72 h-12 sm:h-14 lg:h-16" 
     style={{ backgroundColor: "#FCAC35" }}
   >
     SUBMIT

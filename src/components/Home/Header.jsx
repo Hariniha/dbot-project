@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header-container" style={{ background: '#EAEAEA' }}>
+    <header id="header" style={{ background: '#EAEAEA' }}>
      <Slider
   {...settings}
   className="font-inter font-semibold text-4xl mb-16 text-end leading-snug right-0 pr-6 pt-24 pb-11 md:text-7xl sm:text-4xl xs:text-2xl"
